@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+body, html {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    user-select: none;
+}
+
+body .window {
+    font-family: "Titan One", sans-serif;
+    padding: 5%;
+    padding-top: 150px;
+
+
+
+}
+.window .sky .block {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.sky .block button{
+    font-family: "Titan One", sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 70px;
+    font-weight: 200;
+    background: #a53636;
+    border-radius: 30px;
+    border: 0;
+    color: rgb(75, 26, 26);
+
+}
+.sky {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    height: 300px;
+    background-color: #2b83d6;
+}
+
+.sky .player {
+    position: absolute;
+    bottom: 0px;
+    left: 20%;
+}
+.sky .player pre{
+    font-size: 28px;
+    margin: 0px;
+}
+.sky .bird {
+    position: absolute;
+    bottom: 0px;
+    left: 90%;
+    display: none;
+}
+
+@keyframes fly{
+    0%{
+        left: 90%;
+
+    }
+    100%{
+        left: 0%;
+        animation-delay: 2s;
+    }
+}
+
+.sky .bird pre{
+    margin: 0px;
+}
+
+.earth {
+    position: relative;
+    border-end-end-radius:  30px;
+    border-end-start-radius:  30px;
+    height: 100px;
+    background-color: #44aa2f;
+}
+
+.earth .heart{
+
+    position: absolute;
+
+    right: 30px;
+    
+}
+
+.earth .heart pre{
+    color: #ac2020;
+    font-size: 3rem;
+    text-shadow: 
+        -1px -1px 0 #000000,  
+         1px -1px 0 #000000,
+        -1px  1px 0 #000000,
+         1px  1px 0 #000000;
+    margin: 20px 0px 0px 0px;
+
+}
+
+.earth .point {
+    position: absolute;
+    left: 30px;
+    
+}
+
+.earth .point p{
+    text-shadow: 
+        -1px -1px 0 #000000,  
+         1px -1px 0 #000000,
+        -1px  1px 0 #000000,
+         1px  1px 0 #000000;
+    color: rgb(179, 40, 30);
+    font-size: 3rem;
+    margin: 5px 0px 0px 0px;
+    padding: 0px;
+}
+
+.earth .point .record p{
+    text-shadow: 
+        -1px -1px 0 #000000,  
+         1px -1px 0 #000000,
+        -1px  1px 0 #000000,
+         1px  1px 0 #000000;
+    color: rgb(179, 40, 30);
+    font-size: 1.5rem;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+
+@media (max-width: 530px) {
+    .earth .point p{
+        padding-top: 10px;
+        font-size: 1.7rem;
+    }
+    .earth .point .record p{
+        font-size: 1.2rem;
+    }
+    .earth .heart pre{
+        font-size: 2.5rem;
+    }
+    body .window {
+        padding-left: 5px ;
+        padding-right: 5px ;
+    }
+}
